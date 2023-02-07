@@ -1,4 +1,4 @@
-# OpenLaravelWeek
+# Open Laravel Week
 
 ### Steacks - Tall Steacks
 ###### Tailwind CSS
