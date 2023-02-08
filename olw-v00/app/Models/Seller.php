@@ -7,10 +7,11 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Saller extends Model
+class Seller extends Model
 {
-    use HasFactory;
+    use HasFactory, SoftDeletes;
 
     protected $fillable = [
         'company_id',
@@ -29,6 +30,6 @@ class Saller extends Model
 
     public function sales(): HasMany
     {
-        return $this->hasMany(Seller::class);
+        return $this->hasMany(Sales::class);
     }
 }
