@@ -33,7 +33,7 @@ return new class extends Migration
                     round(s.total_amount * cp.commission_rate / 100) as commission
                 ')->toSql();
 
-        DB::statement("CREATE VIEW sales_commission_view AS $query");
+        DB::statement("CREATE MATERIALIZED VIEW sales_commission_view AS $query");
     }
 
     /**
