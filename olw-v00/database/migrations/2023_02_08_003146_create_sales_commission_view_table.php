@@ -15,7 +15,7 @@ return new class extends Migration
     public function up()
     {   
         $query = DB::table('sales as s')
-                ->join('sallers as sl', 'sl.id','=','s.saller_id')
+                ->join('sellers as sl', 'sl.id','=','s.seller_id')
                 ->join('clients as cl', 'cl.id','=','s.client_id')
                 ->join('companies as cp', 'cp.id','=','sl.company_id')
                 ->join('addresses as ad', 'ad.id', '=', 'cl.address_id')

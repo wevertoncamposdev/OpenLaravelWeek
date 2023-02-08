@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('sales', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('saller_id')->constrained();
+            $table->foreignId('seller_id')->constrained();
             $table->foreignId('client_id')->constrained();
             $table->timestamp('sold_at');
             $table->char('status', 1);
