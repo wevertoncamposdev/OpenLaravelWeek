@@ -1,7 +1,7 @@
 
 ## Keys
   - DEVDOFUTURO
-
+  - OPENAI
 
 ## Duvidas: 
   - Schemas diferentes
