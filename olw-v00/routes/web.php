@@ -31,7 +31,11 @@ Route::middleware('auth')->group(function () {
 
     Route::resource('/clients', ClientController::class);
     Route::get('/chart', function(){
-        return OpenAI
+        return OpenAI::completions()->create([
+            'model' => 'text-davinci-003',
+            'prompt' => 'Me dê uma classe controller resource no padrão Laravel',
+            'max_tokens' => 1500
+        ])->choices[0]->text;
 
     });
 });
