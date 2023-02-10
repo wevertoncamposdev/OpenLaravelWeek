@@ -2,6 +2,7 @@
 ## Keys
   - DEVDOFUTURO
   - OPENAI
+  - MENTORIA
 
 ## Duvidas: 
   - Schemas diferentes
